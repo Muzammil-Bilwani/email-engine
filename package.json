@@ -1,6 +1,6 @@
 {
   "name": "email-engine",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Email Engine",
   "main": "app.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "email"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Muzammil-Bilwani/email-engine"
+    "type": "git",
+    "url": "https://github.com/Muzammil-Bilwani/email-engine"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1"
