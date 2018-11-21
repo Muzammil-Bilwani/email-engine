@@ -1,0 +1,24 @@
+{
+  "name": "email-engine",
+  "version": "1.0.1",
+  "description": "Email Engine",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "email"
+  ],
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
+  },
+  "author": "Muzammil Bilwani",
+  "license": "ISC"
+}
