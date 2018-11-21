@@ -9,6 +9,10 @@
   "keywords": [
     "email"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Muzammil-Bilwani/email-engine"
+  },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1"
   },
