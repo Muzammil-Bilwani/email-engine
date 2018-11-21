@@ -1,4 +1,4 @@
-    # Email Engine
+# Email Engine
 A simple engine who sets your API key and send mail for different platform like [SendGrid](https://sendgrid.com/), [AWS-SES](https://aws.amazon.com/ses/) etc
 
 ## How to Use
@@ -36,7 +36,7 @@ emailEngine.setFromMail('anymail@anydomain.com');
 
 **Happy Coding** 
 
-Future plans
+##Future plans
 - Adding AWS-SES
 - Testing
 - Multiple Mails 
