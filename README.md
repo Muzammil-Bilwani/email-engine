@@ -1,5 +1,5 @@
 # Email Engine
-A simple engine who sets your API key and send mail for different platform like [SendGrid](https://sendgrid.com/), [AWS-SES](https://aws.amazon.com/ses/) etc
+A simple engine who sets your API key and send mail for different platform like [SendGrid](https://sendgrid.com/),[Mailgun](https://www.mailgun.com/), [AWS-SES](https://aws.amazon.com/ses/) etc
 
 ## How to Use
 
@@ -7,12 +7,20 @@ A simple engine who sets your API key and send mail for different platform like 
 
 Set your respective API key
 
+
+### For Mailgun 
+
+```javascript
+const emailEngine = require('email-engine');
+emailEngine.setKey(process.env.YOUR_API_KEY, 'MAIL_GUN', process.env.DOMAIN);
+```
+
 ### For Send Grid 
 
  - Set your API KEY ([API KEYS](https://app.sendgrid.com/settings/api_keys))
 
 ```javascript
-const emailEngine =  require('email-engine');
+const emailEngine = require('email-engine');
 emailEngine.setKey(process.env.YOUR_API_KEY, 'SEND_GRID');
 ```
 

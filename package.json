@@ -1,6 +1,6 @@
 {
   "name": "email-engine",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Email Engine",
   "main": "app.js",
   "scripts": {
@@ -16,7 +16,8 @@
     "url": "https://github.com/Muzammil-Bilwani/email-engine"
   },
   "dependencies": {
-    "@sendgrid/mail": "^6.3.1"
+    "@sendgrid/mail": "^6.3.1",
+    "mailgun-js": "^0.22.0"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
