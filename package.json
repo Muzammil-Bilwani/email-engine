@@ -9,7 +9,8 @@
   "keywords": [
     "email",
     "Send Grid",
-    "Mail sender"
+    "Mail sender",
+    "Mailgun"
   ],
   "repository": {
     "type": "git",
