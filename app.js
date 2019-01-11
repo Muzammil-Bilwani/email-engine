@@ -1,5 +1,5 @@
 const sgMail = require('@sendgrid/mail');
-const mailgun = require('mailgun-js');
+let mailgun = require('mailgun-js');
 
 const SEND_GRID = 'SEND_GRID';
 const MAIL_GUN = 'MAIL_GUN';
@@ -26,7 +26,7 @@ email_engine.setKey = (key, provider, domain = '') => {
   if (emailProvider === SEND_GRID) {
     sgMail.setApiKey(apiKeys);
   } else if (emailProvider === MAIL_GUN) {
-    mailgun({ apiKey: key, domain });
+    mailgun = mailgun({ apiKey: key, domain });
   }
 };
 
