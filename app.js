@@ -34,18 +34,28 @@ email_engine.setFromMail = (fromMail) => {
   emailConfig.from = fromMail;
 };
 
-email_engine.sendMailFromSendGrid = (to, subject, html, from = emailConfig.from) => {
+email_engine.sendMailFromSendGrid = (
+  to,
+  subject,
+  html,
+  from = emailConfig.from,
+  fromname = null,
+) => {
   if (!to || !subject || !html) {
     throw new Error('Incomplete Parameter');
   }
 
   const mail = {
-    from,
+    from: {
+      email: from,
+    },
     subject,
     to,
     html,
   };
-
+  if (fromname) {
+    mail.from.name = fromname;
+  }
   return new Promise((resolve, reject) => {
     sgMail
       .send(mail)
